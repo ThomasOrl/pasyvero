@@ -8,9 +8,10 @@ body {
 
   background: linear-gradient(
     90deg,
-    rgb(69, 161, 168) 25%,
+    rgb(59, 157, 164) 25%,
     rgb(16, 143, 152) 100%
   );
 }
-
-
+.text-right {
+  margin-left: auto;
+}
