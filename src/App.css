@@ -12,6 +12,26 @@ body {
     rgb(16, 143, 152) 100%
   );
 }
-.text-right {
+.quotes-right {
   margin-left: auto;
+}
+
+.imgBx{
+  left:50%;
+  top:-60px;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgb(59, 157, 164) 25%,
+    rgb(16, 143, 152) 100%
+  );
+}
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

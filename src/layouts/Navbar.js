@@ -19,7 +19,7 @@ function Navbar() {
           <img
             src="Pasyvero-logo.png"
             alt="logo"
-            className="h-[50px] ml-2 mt-2"
+            className="h-[70px] ml-2 mt-2"
           ></img>
           <div className="hidden sm:block">
             <h1 className="text-white text-3xl ml-3">
@@ -29,7 +29,7 @@ function Navbar() {
         </div>
         <div
           onClick={handleNav}
-          className=" text-white flex flex-row mt-3 mr-2 z-10"
+          className=" text-white flex flex-row mt-6 mr-2 z-10"
         >
           <div className="text-xl mr-2">Menu</div>
           {nav ? <AiOutlineClose size={28} /> : <RiMenu3Fill size={28} />}
@@ -37,7 +37,7 @@ function Navbar() {
         <div
           className={
             nav
-              ? "fixed top-0 w-[100%] h-[25%] bg-gray-900 rounded-b-3xl ease-in-out duration-700"
+              ? "fixed top-0 w-full h-[auto] pb-5 sm:h-[25%] bg-gray-900 rounded-b-3xl ease-in-out duration-700"
               : "fixed top-[-100%]"
           }
         >
@@ -45,13 +45,13 @@ function Navbar() {
             <img
               src="Pasyvero-logo.png"
               alt="logo"
-              className="h-[50px] ml-2"
+              className="h-[70px] ml-2"
             ></img>
             <div className="hidden sm:block">
-              <h1 className="text-3xl text-white mt-1 ml-2">PASYVERO</h1>
+              <h1 className="text-3xl text-white mt-3 ml-2">PASYVERO</h1>
             </div>
           </div>
-          <ul className="flex flex-row text-lg justify-center cursor-pointer gap-20 pt-20">
+          <ul className="flex flex-col justify-center text-center items-center text-lg cursor-pointer gap-2 pt-5 sm:flex-row sm:gap-20 sm:pt-20">
             <li className="flex flex-row text-white hover:text-blue-300">
               <AiOutlineHome className="mr-2 mt-1" />
               <Link to="/">Accueil</Link>
