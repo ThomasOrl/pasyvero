@@ -13,7 +13,7 @@ function Footer() {
       <footer className="bg-black bg-opacity-20 mt-10">
         <div className="flex items-center justify-center px-4 py-2 lg:justify-between">
           <div className="mr-12 hidden lg:block text-xl font-bold">
-            <span>Retrouvez nous sur nos différents réseaux</span>
+            <span>Retrouvez nous sur les réseaux</span>
           </div>
           <div className="flex justify-center">
             <Link
@@ -47,16 +47,15 @@ function Footer() {
             <h6 className="mb-4 flex items-center justify-center font-bold uppercase md:justify-start">
               A propos
             </h6>
-            <p>Pasyvero | Les produits désoxydants d'origine belge.</p>
+            <p>Pasyvero | Des produits désoxydants d'origine belge.</p>
           </div>
-
           <div>
             <h6 className="mb-4 flex justify-center font-bold uppercase md:justify-start">
               Contact
             </h6>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <BsFillHouseFill className="mr-2" />
-              Wavre , Belgique
+              La Hulpe , Belgique
             </p>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <GrMail className="mr-2" />
@@ -65,8 +64,12 @@ function Footer() {
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <MdPhoneIphone className="mr-2" />+ 32 475 51 63 37
             </p>
-            
           </div>
+        </div>
+        <div className="border border-white border-opacity-50 mb-2"></div>
+        <div className="flex flex-col text-center px-4 py-4 sm:flex-row sm:justify-between">
+          <span>© 2023 Copyright | Pasyvero</span>
+          <span>Design by Thomas Orlans</span>
         </div>
       </footer>
     </>

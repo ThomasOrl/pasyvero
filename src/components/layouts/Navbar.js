@@ -4,7 +4,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { TbVaccineBottle } from "react-icons/tb";
 import { BiMailSend } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { RiMenu3Fill } from "react-icons/ri";
+import { CgMenuGridR } from "react-icons/cg";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -27,12 +27,9 @@ function Navbar() {
             </h1>
           </div>
         </div>
-        <div
-          onClick={handleNav}
-          className=" text-white flex flex-row mt-6 mr-2 z-10"
-        >
+        <div className="flex flex-row mt-6 mr-2 z-10 hover:cursor-default" onClick={handleNav}>
           <div className="text-xl mr-2">Menu</div>
-          {nav ? <AiOutlineClose size={28} /> : <RiMenu3Fill size={28} />}
+          {nav ? <AiOutlineClose size={28} /> : <CgMenuGridR size={28} />}
         </div>
         <div
           className={
@@ -41,7 +38,7 @@ function Navbar() {
               : "fixed top-[-100%]"
           }
         >
-          <div className="flex flex-row mt-3">
+          <div className="flex flex-row mt-2 md:mt-5">
             <img
               src="Pasyvero-logo.png"
               alt="logo"
