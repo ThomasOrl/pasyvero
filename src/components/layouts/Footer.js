@@ -45,7 +45,7 @@ function Footer() {
         <div className="grid-1 grid gap-8 px-4 py-4 md:grid-cols-2 lg:grid-cols-4">
           <div className="text-center md:text-left">
             <h6 className="mb-4 flex items-center justify-center font-bold uppercase md:justify-start">
-              A propos
+              À propos
             </h6>
             <p>Pasyvero | Des produits désoxydants d'origine belge.</p>
           </div>
@@ -67,9 +67,16 @@ function Footer() {
           </div>
         </div>
         <div className="border border-white border-opacity-50 mb-2"></div>
-        <div className="flex flex-col text-center px-4 py-4 sm:flex-row sm:justify-between">
-          <span>© 2023 Copyright | Pasyvero</span>
-          <span>Design by Thomas Orlans</span>
+        <div className="flex flex-col text-center px-4 py-2 sm:flex-row sm:justify-between">
+          <span className="flex flex-row justify-center items-center">
+            © 2023 Copyright | Pasyvero
+          </span>
+          <Link to="https://github.com/ThomasOrl" type="button">
+            <span className="flex flex-row justify-center items-center">
+              <img src="images/OT-logo.png" alt="logo" className="h-11"></img>
+              Design by ThomasOrlans
+            </span>
+          </Link>
         </div>
       </footer>
     </>

@@ -9,7 +9,9 @@ import { FaQuoteRight } from "react-icons/fa";
 function Home() {
   return (
     <>
-      <Navbar />
+      <div className="z-10">
+        <Navbar />
+      </div>
       <div class="text-center my-10">
         <h1 class="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
           <AiOutlineHome size={38} />
@@ -18,8 +20,8 @@ function Home() {
       <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-5">
         <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
-          <div className="border border-dashed border-gray-800 mb-3"></div>
-          <FaQuoteLeft className="m-2 text-gray-800" />
+          <div className="border border-dashed border-gray-600 mb-3"></div>
+          <FaQuoteLeft className="m-2 text-gray-600" />
           <p className="italic mt-1 ml-7">
             Nous sommes une entreprise belge spécialisée dans la production de
             produits désoxydants professionnels pour les véhicules et les
@@ -45,7 +47,7 @@ function Home() {
             nettoyage parfaite pour vos besoins.
           </p>
           <div className="quotes-right">
-            <FaQuoteRight className="mt-3 text-gray-800" />
+            <FaQuoteRight className="mt-3 text-gray-600" />
           </div>
         </div>
         <div className="flex flex-col justify-center w-full lg:pl-10">
@@ -58,7 +60,7 @@ function Home() {
             <h2 className="text-xl font-bold mb-2">
               Une expérience de plus de 45 ans ...
             </h2>
-            <div className="border border-gray-800 border-opacity-40 mb-3"></div>
+            <div className="border border-gray-800 border-opacity-50 mb-3"></div>
             <p className="italic m-2">
               Un produit perfectionné au fil des années afin d'obtenir un
               résultat des plus efficaces.

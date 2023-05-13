@@ -5,13 +5,14 @@
 body {
   font-family: "Courier New", Courier, monospace;
   color: white;
-
   background: linear-gradient(
     90deg,
     rgb(59, 157, 164) 25%,
     rgb(16, 143, 152) 100%
   );
+
 }
+
 .quotes-right {
   margin-left: auto;
 }
@@ -60,31 +61,26 @@ body {
 
 /* Cards for Products page */
 
-.infosProductCard {
+.infosProductCard{
   position: relative;
   height: 290px;
   width: 390px;
-  max-height: auto;
+  max-height: fit-content;
   max-width: 800px;
   background: linear-gradient(
     90deg,
-    rgb(16, 175, 186) 25%,
-    rgb(51, 164, 172) 100%
+    rgb(16, 143, 152) 25%,
+    rgb(59, 157, 164) 100%
   );
-  transition: ease-in-out 0.8s;
+  transition: 0.8s ease-in-out;
 }
-.infosProductCard:hover {
-  height: auto;
-  width: 800px;
-}
-.infosProductCard:hover .invisible {
+.visible {
   visibility: visible;
   opacity: 1;
-  transition-delay: 0.1s;
 }
-.infosProductCard:not(:hover) {
-  height: 290px;
-  width: 390px;
+.infosProductCard.expand {
+  height: fit-content !important;
+  width: auto;
 }
 .imgProductCard {
   position: relative;
@@ -102,12 +98,19 @@ body {
   object-fit: contain;
 }
 @media (max-width: 825px) {
-  .infosProductCard:hover {
-    width: auto;
+  .infosProductCard {
+    width: fit-content;
   }
 }
 @media (max-width: 400px) {
   .infosProductCard {
     width: 280px !important;
   }
+}
+.formBG {
+  background: linear-gradient(
+    90deg,
+    rgb(16, 143, 152) 25%,
+    rgb(16, 143, 152) 100%
+  );
 }
