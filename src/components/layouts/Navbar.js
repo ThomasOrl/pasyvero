@@ -19,7 +19,7 @@ function Navbar() {
           <img
             src="Pasyvero-logo.png"
             alt="logo"
-            className="h-[70px] ml-2 mt-2"
+            className="h-[70px] ml-2 md:ml-8 mt-2"
           ></img>
           <div className="hidden sm:block">
             <h1 className="text-white text-3xl ml-3">
@@ -27,7 +27,10 @@ function Navbar() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-row mt-6 mr-2 z-10 hover:cursor-default" onClick={handleNav}>
+        <div
+          className="flex flex-row mt-6 mr-2 md:mr-8 z-10 hover:cursor-default"
+          onClick={handleNav}
+        >
           <div className="text-xl mr-2">Menu</div>
           {nav ? <AiOutlineClose size={28} /> : <CgMenuGridR size={28} />}
         </div>
@@ -42,7 +45,7 @@ function Navbar() {
             <img
               src="Pasyvero-logo.png"
               alt="logo"
-              className="h-[70px] ml-2"
+              className="h-[70px] ml-2 md:ml-8"
             ></img>
             <div className="hidden sm:block">
               <h1 className="text-3xl text-white mt-3 ml-2">PASYVERO</h1>

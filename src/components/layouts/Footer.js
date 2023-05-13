@@ -10,7 +10,7 @@ import { MdPhoneIphone } from "react-icons/md";
 function Footer() {
   return (
     <>
-      <footer className="bg-black bg-opacity-20 mt-10">
+      <footer className="bg-black bg-opacity-20 mt-20">
         <div className="flex items-center justify-center px-4 py-2 lg:justify-between">
           <div className="mr-12 hidden lg:block text-xl font-bold">
             <span>Retrouvez nous sur les réseaux</span>
@@ -47,7 +47,7 @@ function Footer() {
             <h6 className="mb-4 flex items-center justify-center font-bold uppercase md:justify-start">
               À propos
             </h6>
-            <p>Pasyvero | Des produits désoxydants d'origine belge.</p>
+            <p>Pasyvero | Des produits désoxydants Made In Belgium.</p>
           </div>
           <div>
             <h6 className="mb-4 flex justify-center font-bold uppercase md:justify-start">
@@ -55,7 +55,7 @@ function Footer() {
             </h6>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <BsFillHouseFill className="mr-2" />
-              La Hulpe , Belgique
+              1310 La Hulpe, Belgique
             </p>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <GrMail className="mr-2" />

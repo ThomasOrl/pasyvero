@@ -26,7 +26,7 @@ function Contact() {
   };
   return (
     <>
-      <div className="z-10">
+      <div className="z-10 relative">
         <Navbar />
       </div>
       <div class="text-center my-10">
@@ -34,9 +34,9 @@ function Contact() {
           <BiMailSend size={40} />
         </h1>
       </div>
-      <div className="flex justify-center mb-20">
-        <div className="container text-center shadow-2xl rounded-xl mx-10 max-w-3xl formBG">
-          <div className="p-5 space-y-5">
+      <div className="flex justify-center my-10">
+        <div className="container text-center shadow-xl rounded-xl mx-10 max-w-3xl formBG">
+          <div className="p-5 py-10 space-y-5">
             <form ref={form} onSubmit={sendEmail}>
               <div className="grid gap-5">
                 <input

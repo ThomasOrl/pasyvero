@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import Navbar from "../layouts/Navbar";
 import { TbVaccineBottle } from "react-icons/tb";
 import { BsBook } from "react-icons/bs";
+import { GiSlicedSausage } from "react-icons/gi";
 import Footer from "../layouts/Footer";
 
 function Produits() {
   const [visibleIndexes, setVisibleIndexes] = useState([]);
+  const [isButtonActive, setIsButtonActive] = useState(false);
 
-  const handleClick = (index) => {
+  //Faire apparaitre le texte "utilisation" caché & bouton actif
+  const utilisationTextClick = (index) => {
+    setIsButtonActive(!isButtonActive);
     if (visibleIndexes.includes(index)) {
       setVisibleIndexes(visibleIndexes.filter((i) => i !== index));
     } else {
@@ -16,7 +20,7 @@ function Produits() {
   };
   return (
     <>
-      <div className="z-10">
+      <div className="z-10 relative">
         <Navbar />
       </div>
       <div class="text-center my-10">
@@ -24,7 +28,7 @@ function Produits() {
           <TbVaccineBottle size={40} />
         </h1>
       </div>
-      <div className="flex flex-col items-center pb-10 gap-5 mx-5 lg:flex-row lg:gap-20 lg:pt-10 lg:items-baseline justify-center">
+      <div className="flex flex-col items-center pt-10 pb-10 gap-5 mx-5 lg:flex-row lg:gap-20 lg:pt-10 lg:items-baseline justify-center">
         <div
           className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
             visibleIndexes.includes(0) ? "expand" : ""
@@ -33,12 +37,27 @@ function Produits() {
           <div className="imgProductCard">
             <img src="images/yvero-desox.png" alt="yvero-boat" />
           </div>
-          <p className="relative text-2xl pt-5 text-center">Yvero Desox</p>
-          <div className="flex flex-row justify-center items-center text-center mt-4">
-            <BsBook size={20} />
-            <p className="ml-2 italic" onClick={() => handleClick(0)}>
-              <button>Utilisation</button>
+          <p className="relative font-semibold italic text-2xl pt-5 text-center">
+            Yvero Desox
+          </p>
+          <div
+            className="flex flex-row justify-center items-center text-center mt-4"
+            onClick={() => utilisationTextClick(0)}
+          >
+            <GiSlicedSausage size={20} />
+            <p className="ml-2 italic ">
+              <button
+                className={`hover:border-b hover:border-dashed ${
+                  visibleIndexes.includes(0) ? "active" : ""
+                }`}
+              >
+                Utilisation
+              </button>
             </p>
+          </div>
+          <div className="flex flex-row justify-center items-center  text-center mt-4">
+            <BsBook size={20} />
+            <p className="ml-2 italic">Infos produit</p>
           </div>
           <div
             className={`invisible ${
@@ -77,12 +96,27 @@ function Produits() {
           <div className="imgProductCard ">
             <img src="images/yvero-boat.png" alt="yvero-boat" />
           </div>
-          <p className="relative text-2xl pt-5 text-center">Yvero Boat</p>
-          <div className="flex flex-row justify-center items-center text-center mt-4">
-            <BsBook size={20} />
-            <p className="ml-2 italic" onClick={() => handleClick(1)}>
-              <button>Utilisation</button>
+          <p className="relative font-semibold italic text-2xl pt-5 text-center">
+            Yvero Boat
+          </p>
+          <div
+            className="flex flex-row justify-center items-center text-center mt-4"
+            onClick={() => utilisationTextClick(1)}
+          >
+            <GiSlicedSausage size={20} />
+            <p className="ml-2 italic">
+              <button
+                className={`hover:border-b hover:border-dashed ${
+                  visibleIndexes.includes(1) ? "active" : ""
+                }`}
+              >
+                Utilisation
+              </button>
             </p>
+          </div>
+          <div className="flex flex-row justify-center items-center  text-center mt-4">
+            <BsBook size={20} />
+            <p className="ml-2 italic">Infos produit</p>
           </div>
           <div
             className={`invisible ${
@@ -109,12 +143,27 @@ function Produits() {
           <div className="imgProductCard ">
             <img src="images/yvero-boat-teak.png" alt="yvero-boat-teak" />
           </div>
-          <p className="relative text-2xl pt-5 text-center">Yvero Boat Teak</p>
-          <div className="flex flex-row justify-center items-center text-center mt-4">
-            <BsBook size={20} />
-            <p className="ml-2 italic" onClick={() => handleClick(2)}>
-              <button>Utilisation</button>
+          <p className="relative font-semibold italic text-2xl pt-5 text-center">
+            Yvero Boat Teak
+          </p>
+          <div
+            className="flex flex-row justify-center items-center text-center mt-4"
+            onClick={() => utilisationTextClick(2)}
+          >
+            <GiSlicedSausage size={20} />
+            <p className="ml-2 italic">
+              <button
+                className={`hover:border-b hover:border-dashed ${
+                  visibleIndexes.includes(2) ? "active" : ""
+                }`}
+              >
+                Utilisation
+              </button>
             </p>
+          </div>
+          <div className="flex flex-row justify-center items-center  text-center mt-4">
+            <BsBook size={20} />
+            <p className="ml-2 italic">Infos produit</p>
           </div>
           <div
             className={`invisible ${

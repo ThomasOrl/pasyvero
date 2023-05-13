@@ -10,16 +10,22 @@ body {
     rgb(59, 157, 164) 25%,
     rgb(16, 143, 152) 100%
   );
-
 }
-
+.mainDivHomeBG {
+  background: linear-gradient(
+    90deg,
+    rgb(16, 143, 152) 25%,
+    rgb(16, 143, 152) 100%
+  );
+}
 .quotes-right {
   margin-left: auto;
 }
+
 .experienceTextBg {
   background: linear-gradient(
     90deg,
-    rgb(16, 143, 152) 40%,
+    rgb(56, 157, 165) 40%,
     rgb(59, 157, 164) 100%
   );
 }
@@ -61,18 +67,18 @@ body {
 
 /* Cards for Products page */
 
-.infosProductCard{
+.infosProductCard {
   position: relative;
-  height: 290px;
+  height: 325px;
   width: 390px;
   max-height: fit-content;
   max-width: 800px;
+  min-width: 250px;
   background: linear-gradient(
     90deg,
     rgb(16, 143, 152) 25%,
     rgb(59, 157, 164) 100%
   );
-  transition: 0.8s ease-in-out;
 }
 .visible {
   visibility: visible;
@@ -106,6 +112,9 @@ body {
   .infosProductCard {
     width: 280px !important;
   }
+}
+button.active {
+  border-bottom: dashed 1px;
 }
 .formBG {
   background: linear-gradient(

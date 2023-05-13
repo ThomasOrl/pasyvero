@@ -9,7 +9,7 @@ import { FaQuoteRight } from "react-icons/fa";
 function Home() {
   return (
     <>
-      <div className="z-10">
+      <div className="z-10 relative">
         <Navbar />
       </div>
       <div class="text-center my-10">
@@ -17,11 +17,11 @@ function Home() {
           <AiOutlineHome size={38} />
         </h1>
       </div>
-      <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-5">
+      <div className="mainDivHomeBG block lg:grid lg:grid-cols-2 lg:px-10 lg:py-5 mx-2 md:mx-10  shadow-xl rounded-3xl">
         <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
-          <div className="border border-dashed border-gray-600 mb-3"></div>
-          <FaQuoteLeft className="m-2 text-gray-600" />
+          <div className="border border-dashed border-gray-800 mb-3"></div>
+          <FaQuoteLeft className="m-2 text-gray-800" />
           <p className="italic mt-1 ml-7">
             Nous sommes une entreprise belge spécialisée dans la production de
             produits désoxydants professionnels pour les véhicules et les
@@ -47,11 +47,11 @@ function Home() {
             nettoyage parfaite pour vos besoins.
           </p>
           <div className="quotes-right">
-            <FaQuoteRight className="mt-3 text-gray-600" />
+            <FaQuoteRight className="mt-3 text-gray-800" />
           </div>
         </div>
         <div className="flex flex-col justify-center w-full lg:pl-10">
-          <div className="experienceTextBg shadow-lg rounded-3xl text-center py-5 mx-10 px-5">
+          <div className="experienceTextBg shadow-lg rounded-3xl text-center py-5 my-5 mx-10 px-5">
             <img
               src="laurel-badge.png"
               alt="badge-45years"
