@@ -11,23 +11,8 @@ body {
     rgb(16, 143, 152) 100%
   );
 }
-.mainDivHomeBG {
-  background: linear-gradient(
-    90deg,
-    rgb(16, 143, 152) 25%,
-    rgb(16, 143, 152) 100%
-  );
-}
 .quotes-right {
   margin-left: auto;
-}
-
-.experienceTextBg {
-  background: linear-gradient(
-    90deg,
-    rgb(56, 157, 165) 40%,
-    rgb(59, 157, 164) 100%
-  );
 }
 
 /* Cards for Home page */
@@ -115,6 +100,8 @@ body {
 }
 button.active {
   border-bottom: dashed 1px;
+  border-top: dashed 1px;
+  color: rgb(71, 246, 255);
 }
 .formBG {
   background: linear-gradient(

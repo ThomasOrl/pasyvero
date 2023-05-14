@@ -23,12 +23,12 @@ function Produits() {
       <div className="z-10 relative">
         <Navbar />
       </div>
-      <div class="text-center my-10">
-        <h1 class="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
+      <div className="text-center my-10">
+        <h1 className="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
           <TbVaccineBottle size={40} />
         </h1>
       </div>
-      <div className="flex flex-col items-center pt-10 pb-10 gap-5 mx-5 lg:flex-row lg:gap-20 lg:pt-10 lg:items-baseline justify-center">
+      <div className="flex flex-col items-center pt-10 pb-20 gap-5 mx-5 lg:flex-row lg:gap-20 lg:items-baseline justify-center">
         <div
           className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
             visibleIndexes.includes(0) ? "expand" : ""
@@ -37,7 +37,7 @@ function Produits() {
           <div className="imgProductCard">
             <img src="images/yvero-desox.png" alt="yvero-boat" />
           </div>
-          <p className="relative font-semibold italic text-2xl pt-5 text-center">
+          <p className="relative font-semibold italic text-xl pt-5 text-center">
             Yvero Desox
           </p>
           <div
@@ -47,7 +47,7 @@ function Produits() {
             <GiSlicedSausage size={20} />
             <p className="ml-2 italic ">
               <button
-                className={`hover:border-b hover:border-dashed ${
+                className={`hover:border-b hover:border-t hover:border-dashed ${
                   visibleIndexes.includes(0) ? "active" : ""
                 }`}
               >
@@ -55,7 +55,7 @@ function Produits() {
               </button>
             </p>
           </div>
-          <div className="flex flex-row justify-center items-center  text-center mt-4">
+          <div className="flex flex-row justify-center items-center text-center mt-4">
             <BsBook size={20} />
             <p className="ml-2 italic">Infos produit</p>
           </div>
@@ -89,14 +89,14 @@ function Produits() {
           </div>
         </div>
         <div
-          className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg  infosProductCard ${
+          className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
             visibleIndexes.includes(1) ? "expand" : ""
           }`}
         >
           <div className="imgProductCard ">
             <img src="images/yvero-boat.png" alt="yvero-boat" />
           </div>
-          <p className="relative font-semibold italic text-2xl pt-5 text-center">
+          <p className="relative font-semibold italic text-xl pt-5 text-center">
             Yvero Boat
           </p>
           <div
@@ -106,7 +106,7 @@ function Produits() {
             <GiSlicedSausage size={20} />
             <p className="ml-2 italic">
               <button
-                className={`hover:border-b hover:border-dashed ${
+                className={`hover:border-b hover:border-t hover:border-dashed ${
                   visibleIndexes.includes(1) ? "active" : ""
                 }`}
               >
@@ -114,7 +114,7 @@ function Produits() {
               </button>
             </p>
           </div>
-          <div className="flex flex-row justify-center items-center  text-center mt-4">
+          <div className="flex flex-row justify-center items-center text-center mt-4">
             <BsBook size={20} />
             <p className="ml-2 italic">Infos produit</p>
           </div>
@@ -136,14 +136,14 @@ function Produits() {
           </div>
         </div>
         <div
-          className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg  infosProductCard ${
+          className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
             visibleIndexes.includes(2) ? "expand" : ""
           }`}
         >
           <div className="imgProductCard ">
             <img src="images/yvero-boat-teak.png" alt="yvero-boat-teak" />
           </div>
-          <p className="relative font-semibold italic text-2xl pt-5 text-center">
+          <p className="relative font-semibold italic text-xl pt-5 text-center">
             Yvero Boat Teak
           </p>
           <div
@@ -153,7 +153,7 @@ function Produits() {
             <GiSlicedSausage size={20} />
             <p className="ml-2 italic">
               <button
-                className={`hover:border-b hover:border-dashed ${
+                className={`hover:border-b hover:border-t hover:border-dashed ${
                   visibleIndexes.includes(2) ? "active" : ""
                 }`}
               >
@@ -161,7 +161,7 @@ function Produits() {
               </button>
             </p>
           </div>
-          <div className="flex flex-row justify-center items-center  text-center mt-4">
+          <div className="flex flex-row justify-center items-center text-center mt-4">
             <BsBook size={20} />
             <p className="ml-2 italic">Infos produit</p>
           </div>

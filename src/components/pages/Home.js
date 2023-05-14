@@ -12,12 +12,16 @@ function Home() {
       <div className="z-10 relative">
         <Navbar />
       </div>
-      <div class="text-center my-10">
-        <h1 class="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
+      <div className="text-center my-10 lg:mb-20">
+        <h1 className="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
           <AiOutlineHome size={38} />
         </h1>
       </div>
-      <div className="mainDivHomeBG block lg:grid lg:grid-cols-2 lg:px-10 lg:py-5 mx-2 md:mx-10  shadow-xl rounded-3xl">
+      <div className="text-center text-xl mb-20 pb-4 shadow-lg ">
+        <h1>Découvrez nos différentes gammes</h1>
+      </div>
+      <HomeProductCards />
+      <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl rounded-tl-3xl rounded-bl-3xl">
         <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
           <div className="border border-dashed border-gray-800 mb-3"></div>
@@ -33,14 +37,11 @@ function Home() {
             conçus pour éliminer efficacement la rouille, l'oxydation et autres
             saletés de surface sur les carrosseries, les jantes et les pièces
             métalliques des véhicules.
-            <br /> Nos produits sont également adaptés pour une utilisation sur
-            les bateaux.
-            <br /> Chez Pasyvero, nous sommes fiers de la qualité et de
-            l'efficacité de nos produits.
-            <br /> Nous travaillons en étroite collaboration avec des
-            professionnels de l'entretien automobile pour développer des
-            solutions de nettoyage de pointe adaptées à leurs besoins
-            spécifiques.
+            <br /> Nous avons une gamme de produits spécialement conçus pour une
+            utilisation sur les bateaux.
+            <br /> Nous travaillons en collaboration avec des professionnels de
+            l'entretien pour développer des solutions de nettoyage de pointe
+            adaptées à leurs besoins spécifiques.
             <br /> N'hésitez pas à nous contacter pour plus d'informations ou
             pour passer commande.
             <br /> Nous serons ravis de vous aider à trouver la solution de
@@ -51,7 +52,7 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col justify-center w-full lg:pl-10">
-          <div className="experienceTextBg shadow-lg rounded-3xl text-center py-5 my-5 mx-10 px-5">
+          <div className="experienceTextBg shadow-2xl rounded-3xl text-center py-5 my-5 mx-10 px-5">
             <img
               src="laurel-badge.png"
               alt="badge-45years"
@@ -72,7 +73,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <HomeProductCards />
       <Footer />
     </>
   );

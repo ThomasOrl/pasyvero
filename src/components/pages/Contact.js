@@ -29,8 +29,8 @@ function Contact() {
       <div className="z-10 relative">
         <Navbar />
       </div>
-      <div class="text-center my-10">
-        <h1 class="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
+      <div className="text-center my-10">
+        <h1 className="text-2xl font-bold text-white inline-block bg-white bg-opacity-20 rounded-full shadow-md py-3 px-4">
           <BiMailSend size={40} />
         </h1>
       </div>
@@ -79,8 +79,8 @@ function Contact() {
               * Tous les champs sont requis
             </p>
             <p className="text-blue-100 ml-3">
-              N'hesitez pas à appeler le numéro ce trouvant en bas de page en
-              cas de problèmes avec le formulaire
+              N'hésitez pas à appeler le numéro ce trouvant en bas de page si
+              vous rencontrez des problèmes avec le formulaire
             </p>
           </div>
         </div>
