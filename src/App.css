@@ -110,3 +110,55 @@ button.active {
     rgb(16, 143, 152) 100%
   );
 }
+/* Anime venant du dessus */
+.animate-slide-from-top {
+  animation-name: slide-from-top;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Anime venant de gauche */
+.animate-slide-from-left {
+  animation-name: slide-from-left;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*Anime venant de droite */
+.animate-slide-from-right {
+  animation-name: slide-from-right;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(+100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

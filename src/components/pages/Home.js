@@ -5,8 +5,13 @@ import HomeProductCards from "../HomeProductCards";
 import { AiOutlineHome } from "react-icons/ai";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home() {
+  const handleClick = () => {
+    // Positionner la page tout en haut lors du click les liens
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="z-10 relative">
@@ -17,12 +22,12 @@ function Home() {
           <AiOutlineHome size={38} />
         </h1>
       </div>
-      <div className="text-center text-xl mb-20 pb-4 shadow-lg ">
-        <h1>Découvrez nos différentes gammes</h1>
+      <div className="text-center font-semibold text-xl mb-20 pb-2 shadow-lg animate-slide-from-top ">
+        <h1>Découvrez nos différentes gammes de produits</h1>
       </div>
       <HomeProductCards />
-      <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl rounded-tl-3xl rounded-bl-3xl">
-        <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10">
+      <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl rounded-tl-3xl rounded-bl-3xl animate-slide-from-right">
+        <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10 ">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
           <div className="border border-dashed border-gray-800 mb-3"></div>
           <FaQuoteLeft className="m-2 text-gray-800" />
@@ -68,9 +73,26 @@ function Home() {
               <br /> Grâce à son engagement envers la qualité et l'amélioration
               de sa formule, Pasyvero est reconnue comme une société de
               production fiable et de confiance pour les propriétaires de
-              voitures, de motos, de bateaux et autres véhicules.
+              voitures, motos, bateaux et autres véhicules.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="text-center pt-16 md:pt-32 md:pb-16 px-5">
+        <div className="inline-block italic text-lg rounded-3xl shadow-2xl px-5 md:px-20 py-10 space-y-5">
+          <div className="border w-1/2"></div>
+          <h2 className="text-xl font-semibold">Commandes et renseignements</h2>
+          <div className="border w-1/2 ml-auto"></div>
+          <p>
+            Vous désirez passer une commande ou simplement nous poser une
+            question ?
+          </p>
+          <p>Alors n'hésitez plus !</p>
+          <button className="font-semibold text-xl border border-white rounded-full px-3 py-1">
+            <Link onClick={handleClick} to="/contact">
+              Contactez-nous
+            </Link>
+          </button>
         </div>
       </div>
       <Footer />
