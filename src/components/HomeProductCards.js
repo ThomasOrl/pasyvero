@@ -14,7 +14,7 @@ function HomeProductCards() {
             <img src="images/yvero-desox.png" alt="yvero-boat" />
           </div>
           <p className="relative text-xl">Yvero Desox</p>
-          <p className="bg-black border border-white border-opacity-70 hover:border-black hover:bg-white hover:bg-opacity-20 hover:text-black bg-opacity-20 rounded-xl inline-block px-3 mt-2">
+          <p className="bg-black border border-white border-opacity-70 hover:border-black hover:bg-white hover:bg-opacity-60 hover:text-black bg-opacity-20 rounded-xl inline-block px-3 mt-2">
             <Link onClick={handleClick} to="/produits">
               + d'informations
             </Link>
@@ -25,7 +25,7 @@ function HomeProductCards() {
             <img src="images/yvero-boat.png" alt="yvero-desox" />
           </div>
           <p className="relative text-xl">Yvero Boat</p>
-          <p className="bg-black border border-white border-opacity-70 hover:border-black hover:bg-white hover:bg-opacity-20 hover:text-black bg-opacity-20 rounded-xl inline-block px-3 mt-2">
+          <p className="bg-black border border-white border-opacity-70 hover:border-black hover:bg-white hover:bg-opacity-60 hover:text-black bg-opacity-20 rounded-xl inline-block px-3 mt-2">
             <Link onClick={handleClick} to="/produits">
               + d'informations
             </Link>
@@ -36,7 +36,7 @@ function HomeProductCards() {
             <img src="images/yvero-boat-teak.png" alt="yvero-teak" />
           </div>
           <p className="relative text-xl">Yvero Boat Teak</p>
-          <p className="bg-black border border-white border-opacity-70 hover:border-black hover:bg-white hover:bg-opacity-20 hover:text-black bg-opacity-20 rounded-xl inline-block px-3 mt-2">
+          <p className="bg-black border border-white border-opacity-70 hover:border-black hover:bg-white hover:bg-opacity-60 hover:text-black bg-opacity-20 rounded-xl inline-block px-3 mt-2">
             <Link onClick={handleClick} to="/produits">
               + d'informations
             </Link>

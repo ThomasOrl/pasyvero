@@ -5,10 +5,16 @@
 body {
   font-family: "Courier New", Courier, monospace;
   color: white;
-  background: linear-gradient(
+  /*background: linear-gradient(
     90deg,
     rgb(59, 157, 164) 25%,
     rgb(16, 143, 152) 100%
+  );*/
+  background: rgb(0, 36, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 78, 1) 30%,
+    rgb(3, 0, 60) 100%
   );
 }
 .quotes-right {
@@ -23,8 +29,8 @@ body {
   width: 280px;
   background: linear-gradient(
     90deg,
-    rgb(16, 143, 152) 25%,
-    rgb(59, 157, 164) 100%
+    rgba(3, 0, 60) 25%,
+    rgb(0, 36, 78, 1) 100%
   );
 }
 .imgBx {
@@ -37,8 +43,8 @@ body {
   overflow: hidden;
   background: linear-gradient(
     90deg,
-    rgb(16, 143, 152) 25%,
-    rgb(59, 157, 164) 100%
+    rgba(3, 0, 60) 25%,
+    rgb(0, 36, 78, 1) 100%
   );
 }
 .imgBx img {
@@ -61,8 +67,8 @@ body {
   min-width: 250px;
   background: linear-gradient(
     90deg,
-    rgb(16, 143, 152) 25%,
-    rgb(59, 157, 164) 100%
+    rgba(3, 0, 60) 25%,
+    rgb(0, 36, 78, 1) 100%
   );
 }
 .visible {
@@ -106,8 +112,7 @@ button.active {
 .formBG {
   background: linear-gradient(
     90deg,
-    rgb(16, 143, 152) 25%,
-    rgb(16, 143, 152) 100%
+    
   );
 }
 /* Anime venant du dessus */
@@ -161,4 +166,3 @@ button.active {
     transform: translateX(0);
   }
 }
-

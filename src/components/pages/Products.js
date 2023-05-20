@@ -125,13 +125,17 @@ function Produits() {
           >
             <p className="border-b border-dashed mt-4 mb-3"></p>
             <p className="text-sm">
-              <span className="font-bold">Pour la coque :</span> Préparer la
-              solution en mélangeant 1 litre d'YVERO DESOX avec 9 litres d'eau
-              froide. Utiliser la solution comme un shampooing pour laver la
-              voiture comme d'habitude. Attendre environ 15 minutes. Rincer
-              copieusement à l'eau froide jusqu'à ce que la mousse ait disparu.
-              Si toutes les traces d'oxydation ont disparu, compléter avec un
-              polish rapide et sans effort.
+              <span className="font-bold">Pour la coque :</span> Yvero Boat
+              s'emploie pur, pulvérisez ou appliquez légèrement au pinceau en
+              veillant à couvrir uniformément la surface en bois. Laissez agir
+              pendant 10 à 15 minutes pour permettre au produit d'agir en
+              profondeur. Ensuite, rincez abondamment à l'aide d'une éponge et
+              d'eau froide jusqu'à ce que la mousse disparaisse complètement.
+              Lors du nettoyage des éléments de pont, veillez à bien mouiller la
+              coque au préalable afin de neutraliser le produit à cet endroit et
+              éviter les traînées coulantes. Ce produit est sans danger pour les
+              caoutchoucs et le gelcoat. Évitez de l'utiliser en plein soleil
+              pour de meilleurs résultats.
             </p>
           </div>
         </div>
@@ -173,12 +177,25 @@ function Produits() {
             <p className="border-b border-dashed mt-4 mb-3"></p>
             <p className="text-sm">
               <span className="font-bold">Pour les ponts de bateau :</span>
-              Préparer la solution en mélangeant 1 litre d'YVERO DESOX avec 9
-              litres d'eau froide. Utiliser la solution comme un shampooing pour
-              laver la voiture comme d'habitude. Attendre environ 15 minutes.
-              Rincer copieusement à l'eau froide jusqu'à ce que la mousse ait
-              disparu. Si toutes les traces d'oxydation ont disparu, compléter
-              avec un polish rapide et sans effort.
+              L'application du produit est très simple, il suffit de l'appliquer
+              sur les surfaces en bois, attendre quelques instant après
+              utilisation, un simple rinçage à l'eau froide suffit pour éliminer
+              la solution chargée, laissant les bois précieux avec une apparence
+              revitalisée et durable.
+              <br />
+              <br />
+              <span className="font-bold">Infos produit: </span>
+              YVERO BOAT TEAK CLEANER est un produit innovant conçu pour
+              nettoyer en profondeur le teak et les bois précieux sur les
+              bateaux. Sa formule spéciale, obtenue à partir d'un mélange à
+              haute température d'acides et de produits astringents, il permet
+              de restaurer l'aspect neuf des surfaces en bois. Les acides
+              pénètrent en profondeur pour éliminer les impuretés des pores du
+              bois, tandis que les éléments astringents resserrent les pores
+              pour une finition lisse et uniforme. De plus, ce produit respecte
+              les caoutchoucs et les joints polymères, garantissant une
+              utilisation sûre et sans dommage pour les autres composants du
+              bateau.
               <br />
             </p>
           </div>

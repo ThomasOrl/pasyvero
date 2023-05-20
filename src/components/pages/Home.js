@@ -29,8 +29,8 @@ function Home() {
       <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl rounded-tl-3xl rounded-bl-3xl animate-slide-from-right">
         <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10 ">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
-          <div className="border border-dashed border-gray-800 mb-3"></div>
-          <FaQuoteLeft className="m-2 text-gray-800" />
+          <div className="border border-dashed border-gray-500 mb-3"></div>
+          <FaQuoteLeft className="m-2 text-gray-500" />
           <p className="italic mt-1 ml-7">
             Nous sommes une entreprise belge spécialisée dans la production de
             produits désoxydants professionnels pour les véhicules et les
@@ -53,20 +53,20 @@ function Home() {
             nettoyage parfaite pour vos besoins.
           </p>
           <div className="quotes-right">
-            <FaQuoteRight className="mt-3 text-gray-800" />
+            <FaQuoteRight className="mt-3 text-gray-500" />
           </div>
         </div>
         <div className="flex flex-col justify-center w-full lg:pl-10">
           <div className="experienceTextBg shadow-2xl rounded-3xl text-center py-5 my-5 mx-10 px-5">
             <img
-              src="laurel-badge.png"
+              src="anniversary-badge.png"
               alt="badge-45years"
-              className="h-[110px] w-[110px] mx-auto"
+              className="h-[110px] w-[130px] mx-auto"
             ></img>
             <h2 className="text-xl font-bold mb-2">
               Une expérience de plus de 45 ans ...
             </h2>
-            <div className="border border-gray-800 border-opacity-50 mb-3"></div>
+            <div className="border border-gray-500 border-opacity-50 mb-3"></div>
             <p className="italic m-2">
               Un produit perfectionné au fil des années afin d'obtenir un
               résultat des plus efficaces.
@@ -79,7 +79,7 @@ function Home() {
         </div>
       </div>
       <div className="text-center pt-16 md:pt-32 md:pb-16 px-5">
-        <div className="inline-block italic text-lg rounded-3xl shadow-2xl px-5 md:px-20 py-10 space-y-5">
+        <div className="inline-block italic text-lg border border-white border-opacity-10 rounded-3xl shadow-2xl px-5 md:px-20 py-10 space-y-5">
           <div className="border w-1/2"></div>
           <h2 className="text-xl font-semibold">Commandes et renseignements</h2>
           <div className="border w-1/2 ml-auto"></div>
@@ -88,7 +88,7 @@ function Home() {
             question ?
           </p>
           <p>Alors n'hésitez plus !</p>
-          <button className="font-semibold text-xl border border-white rounded-full px-3 py-1">
+          <button className="font-semibold text-xl border border-white shadow-lg rounded-full px-3 py-1">
             <Link onClick={handleClick} to="/contact">
               Contactez-nous
             </Link>
