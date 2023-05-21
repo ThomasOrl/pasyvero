@@ -22,11 +22,11 @@ function Home() {
           <AiOutlineHome size={38} />
         </h1>
       </div>
-      <div className="text-center font-semibold text-xl mb-20 pb-2 shadow-lg animate-slide-from-top ">
+      <div className="text-center italic text-xl mb-20 pb-2 border border-t-0 border-white border-opacity-10 shadow-2xl animate-slide-from-top ">
         <h1>Découvrez nos différentes gammes de produits</h1>
       </div>
       <HomeProductCards />
-      <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl rounded-tl-3xl rounded-bl-3xl animate-slide-from-right">
+      <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl border border-white border-opacity-10 rounded-tl-3xl rounded-bl-3xl animate-slide-from-right">
         <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10 ">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
           <div className="border border-dashed border-gray-500 mb-3"></div>
@@ -57,7 +57,7 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col justify-center w-full lg:pl-10">
-          <div className="experienceTextBg shadow-2xl rounded-3xl text-center py-5 my-5 mx-10 px-5">
+          <div className="experienceTextBg border border-white border-opacity-10 shadow-2xl rounded-3xl text-center py-5 my-5 mx-10 px-5">
             <img
               src="anniversary-badge.png"
               alt="badge-45years"

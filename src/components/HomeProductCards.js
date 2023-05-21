@@ -8,7 +8,7 @@ function HomeProductCards() {
   };
   return (
     <>
-      <div className="flex flex-col text-center md:flex-row items-center justify-center gap-10 xl:gap-40 pb-24 px-2 md:pt-[60px] lg:px-20 animate-slide-from-left">
+      <div className="flex flex-col text-center md:flex-row items-center justify-center gap-10 xl:gap-40 pb-20 md:pb-[130px] px-2 md:pt-[60px] lg:px-20 animate-slide-from-left">
         <div className=" homeCard border border-white border-opacity-10 text-lg mt-8 px-5 py-2 rounded-3xl shadow-lg">
           <div className="imgBx border border-white border-opacity-10 rounded-3xl shadow-lg">
             <img src="images/yvero-desox.png" alt="yvero-boat" />

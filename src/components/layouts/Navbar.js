@@ -37,7 +37,7 @@ function Navbar() {
         <div
           className={
             nav
-              ? "fixed top-0 w-full h-[auto] pb-5 sm:h-[25%] bg-black rounded-b-3xl ease-in-out duration-700"
+              ? "fixed top-0 w-full h-[auto] pb-5 sm:h-[25%] BGNav border border-t-0 border-white border-opacity-40 rounded-b-3xl ease-in-out duration-700"
               : "fixed top-[-100%]"
           }
         >

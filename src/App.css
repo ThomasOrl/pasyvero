@@ -10,11 +10,18 @@ body {
     rgb(59, 157, 164) 25%,
     rgb(16, 143, 152) 100%
   );*/
-  background: rgb(0, 36, 78);
   background: linear-gradient(
     90deg,
     rgba(0, 36, 78, 1) 30%,
     rgb(3, 0, 60) 100%
+  );
+}
+
+.BGNav {
+  background: linear-gradient(
+    90deg,
+    rgba(3, 0, 60) 15%,
+    rgb(0, 36, 78, 1) 100%
   );
 }
 .quotes-right {
@@ -76,7 +83,7 @@ body {
   opacity: 1;
 }
 .infosProductCard.expand {
-  height: fit-content !important;
+  height: min-content;
   width: auto;
 }
 .imgProductCard {
@@ -110,10 +117,7 @@ button.active {
   color: rgb(71, 246, 255);
 }
 .formBG {
-  background: linear-gradient(
-    90deg,
-    
-  );
+  background: linear-gradient(90deg);
 }
 /* Anime venant du dessus */
 .animate-slide-from-top {

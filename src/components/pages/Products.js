@@ -6,16 +6,30 @@ import { GiSlicedSausage } from "react-icons/gi";
 import Footer from "../layouts/Footer";
 
 function Produits() {
-  const [visibleIndexes, setVisibleIndexes] = useState([]);
+  const [visibleUtilisationIndexes, setVisibleUtilisationIndexes] = useState(
+    []
+  );
+  const [visibleInfosIndexes, setVisibleInfosIndexes] = useState([]);
   const [isButtonActive, setIsButtonActive] = useState(false);
 
   //Faire apparaitre le texte "utilisation" caché & bouton actif
   const utilisationTextClick = (index) => {
     setIsButtonActive(!isButtonActive);
-    if (visibleIndexes.includes(index)) {
-      setVisibleIndexes(visibleIndexes.filter((i) => i !== index));
+    if (visibleUtilisationIndexes.includes(index)) {
+      setVisibleUtilisationIndexes(
+        visibleUtilisationIndexes.filter((i) => i !== index)
+      );
     } else {
-      setVisibleIndexes([...visibleIndexes, index]);
+      setVisibleUtilisationIndexes([...visibleUtilisationIndexes, index]);
+    }
+  };
+  //Faire apparaitre le texte "Infos" caché & bouton actif
+  const infosTextClick = (index) => {
+    setIsButtonActive(!isButtonActive);
+    if (visibleInfosIndexes.includes(index)) {
+      setVisibleInfosIndexes(visibleInfosIndexes.filter((i) => i !== index));
+    } else {
+      setVisibleInfosIndexes([...visibleInfosIndexes, index]);
     }
   };
   return (
@@ -31,7 +45,10 @@ function Produits() {
       <div className="flex flex-col items-center pt-10 pb-20 gap-5 mx-5 lg:flex-row lg:gap-20 lg:items-baseline justify-center">
         <div
           className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
-            visibleIndexes.includes(0) ? "expand" : ""
+            visibleUtilisationIndexes.includes(0) ||
+            visibleInfosIndexes.includes(0)
+              ? "expand"
+              : ""
           }`}
         >
           <div className="imgProductCard">
@@ -48,20 +65,32 @@ function Produits() {
             <p className="ml-2 italic ">
               <button
                 className={`hover:border-b hover:border-t hover:border-dashed ${
-                  visibleIndexes.includes(0) ? "active" : ""
+                  visibleUtilisationIndexes.includes(0) ? "active" : ""
                 }`}
               >
                 Utilisation
               </button>
             </p>
           </div>
-          <div className="flex flex-row justify-center items-center text-center mt-4">
+          <div
+            className="flex flex-row justify-center items-center text-center mt-4"
+            onClick={() => infosTextClick(0)}
+          >
             <BsBook size={20} />
-            <p className="ml-2 italic">Infos produit</p>
+
+            <p className="ml-2 italic">
+              <button
+                className={`hover:border-b hover:border-t hover:border-dashed ${
+                  visibleInfosIndexes.includes(0) ? "active" : ""
+                }`}
+              >
+                Infos produit
+              </button>
+            </p>
           </div>
           <div
             className={`invisible ${
-              visibleIndexes.includes(0) ? "visible" : ""
+              visibleUtilisationIndexes.includes(0) ? "visible" : ""
             }`}
           >
             <p className="border-b border-dashed mt-4 mb-3"></p>
@@ -87,10 +116,29 @@ function Produits() {
               procédure que pour les jantes.
             </p>
           </div>
+          <div
+            className={`invisible ${
+              visibleInfosIndexes.includes(0) ? "visible" : ""
+            }`}
+          >
+            <p className="border-b border-dashed mt-4 mb-3"></p>
+            <p className="text-sm">
+              <span className="font-bold">Infos produits</span> Appliquer YVERO
+              DESOX<span> </span>
+              <span className="font-bold border border-white">PUR</span> au
+              pinceau, spray ou pulvérisateur en partant du bas de la jante
+              jusqu'au haut. Attendre que le produit agisse pendant environ 10 à
+              15 minutes. Rincer à l'eau froide à l'aide d'une éponge, d'un
+              tuyau d'arrosage ou d'un nettoyeur haute pression. Notez qu'il est
+              déconseillé d'utiliser le produit au grand soleil et que celui-ci
+              est sans danger pour les caoutchoucs.
+              <br />
+            </p>
+          </div>
         </div>
         <div
           className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
-            visibleIndexes.includes(1) ? "expand" : ""
+            visibleUtilisationIndexes.includes(1) ? "expand" : ""
           }`}
         >
           <div className="imgProductCard ">
@@ -107,7 +155,7 @@ function Produits() {
             <p className="ml-2 italic">
               <button
                 className={`hover:border-b hover:border-t hover:border-dashed ${
-                  visibleIndexes.includes(1) ? "active" : ""
+                  visibleUtilisationIndexes.includes(1) ? "active" : ""
                 }`}
               >
                 Utilisation
@@ -120,7 +168,7 @@ function Produits() {
           </div>
           <div
             className={`invisible ${
-              visibleIndexes.includes(1) ? "visible" : ""
+              visibleUtilisationIndexes.includes(1) ? "visible" : ""
             }`}
           >
             <p className="border-b border-dashed mt-4 mb-3"></p>
@@ -141,7 +189,7 @@ function Produits() {
         </div>
         <div
           className={`border border-white border-opacity-30 text-lg mt-8 px-5 py-4 rounded-3xl shadow-lg infosProductCard ${
-            visibleIndexes.includes(2) ? "expand" : ""
+            visibleUtilisationIndexes.includes(2) ? "expand" : ""
           }`}
         >
           <div className="imgProductCard ">
@@ -158,7 +206,7 @@ function Produits() {
             <p className="ml-2 italic">
               <button
                 className={`hover:border-b hover:border-t hover:border-dashed ${
-                  visibleIndexes.includes(2) ? "active" : ""
+                  visibleUtilisationIndexes.includes(2) ? "active" : ""
                 }`}
               >
                 Utilisation
@@ -171,7 +219,7 @@ function Produits() {
           </div>
           <div
             className={`invisible ${
-              visibleIndexes.includes(2) ? "visible" : ""
+              visibleUtilisationIndexes.includes(2) ? "visible" : ""
             }`}
           >
             <p className="border-b border-dashed mt-4 mb-3"></p>
