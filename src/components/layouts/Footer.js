@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GrFacebookOption } from "react-icons/gr";
-import { FaGooglePlusG } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsFillHouseFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
@@ -23,17 +22,8 @@ function Footer() {
             >
               <GrFacebookOption className="mx-auto h-full w-4" />
             </Link>
-
             <Link
-              to="#!"
-              type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase"
-            >
-              <FaGooglePlusG className="mx-auto h-full w-4" />
-            </Link>
-
-            <Link
-              to="#!"
+              to="https://www.linkedin.com/in/patrick-orlans-058b6321/"
               type="button"
               className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase"
             >

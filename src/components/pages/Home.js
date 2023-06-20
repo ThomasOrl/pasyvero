@@ -90,7 +90,7 @@ function Home() {
             question ?
           </p>
           <p>Alors n'hésitez plus !</p>
-          <button className="font-semibold text-xl border border-white shadow-lg rounded-full px-3 py-1">
+          <button className="font-semibold text-xl border border-white hover:text-black hover:bg-white hover:transition-all duration-700 shadow-lg rounded-full px-3 py-1">
             <Link onClick={handleClick} to="/contact">
               Contactez-nous
             </Link>
