@@ -7,6 +7,10 @@ import { AiOutlineClose } from "react-icons/ai";
 import { CgMenuGridR } from "react-icons/cg";
 
 function Navbar() {
+  const handleClick = () => {
+    // Positionner l'utilisateur en haut de page lors du click
+    window.scrollTo(0, 0);
+  };
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -54,15 +58,21 @@ function Navbar() {
           <ul className="flex flex-col justify-center text-center items-center text-lg cursor-pointer gap-2 pt-5 sm:flex-row sm:gap-20 sm:pt-20">
             <li className="flex flex-row text-white hover:text-blue-300">
               <AiOutlineHome className="mr-2 mt-1" />
-              <Link to="/">Accueil</Link>
+              <Link onClick={handleClick} to="/">
+                Accueil
+              </Link>
             </li>
             <li className="flex flex-row text-white hover:text-blue-300">
               <TbVaccineBottle className="mr-2 mt-1" />
-              <Link to="/produits">Produits</Link>
+              <Link onClick={handleClick} to="/produits">
+                Produits
+              </Link>
             </li>
             <li className="flex flex-row text-white hover:text-blue-300">
               <BiMailSend className="mr-2 mt-1" />
-              <Link to="/contact">Contact</Link>
+              <Link onClick={handleClick} to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

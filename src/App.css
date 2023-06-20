@@ -64,28 +64,23 @@ body {
 }
 
 /* Cards for Products page */
-
+.icone-size {
+  font-size: 1rem !important;
+}
 .infosProductCard {
   position: relative;
-  height: 325px;
-  width: 390px;
+  height: fit-content;
+  width: fit-content;
   max-height: fit-content;
   max-width: 800px;
-  min-width: 250px;
+  min-width: 320px;
   background: linear-gradient(
     90deg,
     rgba(3, 0, 60) 25%,
     rgb(0, 36, 78, 1) 100%
   );
 }
-.visible {
-  visibility: visible;
-  opacity: 1;
-}
-.infosProductCard.expand {
-  height: min-content;
-  width: auto;
-}
+
 .imgProductCard {
   position: relative;
   height: 130px;
@@ -111,9 +106,7 @@ body {
     width: 280px !important;
   }
 }
-button.active {
-  border-bottom: dashed 1px;
-  border-top: dashed 1px;
+.titleProductCardBlue{
   color: rgb(71, 246, 255);
 }
 .formBG {

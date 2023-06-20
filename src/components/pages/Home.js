@@ -29,8 +29,8 @@ function Home() {
       <div className="block lg:grid lg:grid-cols-2 lg:px-10 lg:py-20 ml-2 md:ml-40 shadow-xl border border-white border-opacity-10 rounded-tl-3xl rounded-bl-3xl animate-slide-from-right">
         <div className="flex flex-col justify-center text-left w-full px-5 py-5 lg:px-10 ">
           <h2 className="text-xl font-bold mb-3">La société Pasyvero</h2>
-          <div className="border border-dashed border-gray-500 mb-3"></div>
-          <FaQuoteLeft className="m-2 text-gray-500" />
+          <div className="border border-dashed border-gray-400 mb-3"></div>
+          <FaQuoteLeft className="m-2 text-gray-400" />
           <p className="italic mt-1 ml-7">
             Nous sommes une entreprise belge spécialisée dans la production de
             produits désoxydants professionnels pour les véhicules et les
@@ -53,7 +53,7 @@ function Home() {
             nettoyage parfaite pour vos besoins.
           </p>
           <div className="quotes-right">
-            <FaQuoteRight className="mt-3 text-gray-500" />
+            <FaQuoteRight className="mt-3 text-gray-400" />
           </div>
         </div>
         <div className="flex flex-col justify-center w-full lg:pl-10">
@@ -71,9 +71,11 @@ function Home() {
               Un produit perfectionné au fil des années afin d'obtenir un
               résultat des plus efficaces.
               <br /> Grâce à son engagement envers la qualité et l'amélioration
-              de sa formule, Pasyvero est reconnue comme une société de
-              production fiable et de confiance pour les propriétaires de
-              voitures, motos, bateaux et autres véhicules.
+              de sa formule, Pasyvero est une société reconnue dans le monde de
+              l'entretien.
+              <br />
+              Ses produits sont prévus pour les voitures, motos, bateaux et
+              autres véhicules.
             </p>
           </div>
         </div>

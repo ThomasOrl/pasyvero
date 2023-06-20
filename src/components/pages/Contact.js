@@ -4,6 +4,7 @@ import Footer from "../layouts/Footer";
 import { BiMailSend } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { TiWarning } from "react-icons/ti";
 
 function Contact() {
   const form = useRef();
@@ -12,7 +13,12 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_id", "template_id", form.current, "public_id")
+      .sendForm(
+        "service_q185j3i",
+        "template_wu4n2ah",
+        form.current,
+        "r-G9yXAZylDwsaeoH"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -75,12 +81,14 @@ function Contact() {
                 className="mt-5 text-center rounded-xl border cursor-pointer bg-transparent hover:text-black hover:bg-white hover:transition-all duration-700 px-20 py-2 text-white font-bold "
               />
             </form>
-            <p className="text-white font-bold">
-              * Tous les champs sont requis
-            </p>
-            <p className="text-blue-100 ml-3">
-              N'hésitez pas à appeler le numéro ce trouvant en bas de page si
-              vous rencontrez des problèmes avec le formulaire
+
+            <div className="flex flex-row justify-center items-center">
+              <TiWarning size={24} color="yellow" />
+              <p className="ml-3 font-bold">Tous les champs sont requis</p>
+            </div>
+            <p className="text-blue-100 ml-3 text-sm">
+              N'hésitez pas à nous contacter par téléphone ou par mail si vous
+              rencontrez des problèmes avec le formulaire.
             </p>
           </div>
         </div>
