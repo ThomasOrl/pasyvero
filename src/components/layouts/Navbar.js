@@ -19,18 +19,18 @@ function Navbar() {
   return (
     <>
       <nav className="flex justify-between my-2">
-        <div className="flex items-center">
-          <img
-            src="Pasyvero-logo.png"
-            alt="logo"
-            className="h-[70px] ml-2 md:ml-8 mt-2"
-          ></img>
-          <div className="hidden sm:block">
-            <h1 className="text-white text-3xl ml-3">
-              <Link to="/">PASYVERO</Link>
-            </h1>
+        <Link to="/">
+          <div className="flex items-center">
+            <img
+              src="Pasyvero-logo.png"
+              alt="logo"
+              className="h-[70px] ml-2 md:ml-8 mt-2"
+            ></img>
+            <div className="hidden sm:block">
+              <h1 className="text-white text-3xl ml-3">PASYVERO</h1>
+            </div>
           </div>
-        </div>
+        </Link>
         <div
           className="flex flex-row mt-6 mr-2 md:mr-8 z-10 hover:cursor-default"
           onClick={handleNav}

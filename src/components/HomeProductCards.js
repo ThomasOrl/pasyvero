@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 function HomeProductCards() {
   const handleClick = () => {
-    // Positionner la page tout en haut lors du click les liens
+    // Positionner la page tout en haut lors du clic sur le lien,
+
     window.scrollTo(0, 0);
   };
   return (

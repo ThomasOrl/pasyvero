@@ -123,7 +123,7 @@ function Produits() {
               Polyvalent, Yvero Desox vous garantit des résultats exceptionnels.
               <br />
             </p>
-            <p className="text-sm italic mt-3">
+            <div className="text-sm italic mt-3">
               <span className="font-semibold">
                 Il est idéal pour une utilisation sur :
               </span>
@@ -137,7 +137,7 @@ function Produits() {
                 <li>- Les polyester</li>
                 <li>- Les alliages légers</li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
 
@@ -223,7 +223,7 @@ function Produits() {
               et le gelcoat. Évitez de l'utiliser en plein soleil pour de
               meilleurs résultats.
             </p>
-            <p className="text-sm italic mt-3">
+            <div className="text-sm italic mt-3">
               <span className="font-semibold">
                 Il est idéal pour une utilisation sur :
               </span>
@@ -232,7 +232,7 @@ function Produits() {
                 <li>- Les coques de bateaux</li>
                 <li>- Les ponts de bateaux</li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
 
@@ -310,7 +310,7 @@ function Produits() {
               garantissant une utilisation sûre et sans dommage pour les autres
               composants du bateau.
             </p>
-            <p className="text-sm italic mt-3">
+            <div className="text-sm italic mt-3">
               <span className="font-semibold">
                 Il est idéal pour une utilisation sur :
               </span>
@@ -319,7 +319,7 @@ function Produits() {
                 <li>- Les ponts de bateaux en teak </li>
                 <li>- Les bois précieux </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>

@@ -39,9 +39,9 @@ function Home() {
             carrosseries et autres établissements professionnels de l'entretien
             automobile.
             <br /> Nous proposons une gamme complète de produits désoxydants,
-            conçus pour éliminer efficacement la rouille, l'oxydation et autres
-            saletés de surface sur les carrosseries, les jantes et les pièces
-            métalliques des véhicules.
+            conçus pour éliminer efficacement les traces de rouilles,
+            l'oxydation et autres saletés de surface sur les carrosseries, les
+            jantes et les pièces métalliques des véhicules.
             <br /> Nous avons une gamme de produits spécialement conçus pour une
             utilisation sur les bateaux.
             <br /> Nous travaillons en collaboration avec des professionnels de
